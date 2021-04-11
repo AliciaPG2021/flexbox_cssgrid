@@ -1,0 +1,101 @@
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+header h2{
+    width: 95%;
+    height: 50px;
+    background-color: rgb(202, 243, 229);
+    border-radius: 3%;
+    margin:10px auto;
+    text-align: center;
+    font-size: 15px;
+    padding-top: 10px;
+}
+
+#cssgrid{
+    display:grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 0.5em;
+    grid-template-rows: 1fr;
+    width: 95%;
+    margin: 0 auto;
+}
+
+#cssgrid main{
+    height: 200px;
+    background-color: rgb(175, 250, 250);
+    text-align: center;
+    font-size: 10px;
+    padding-top: 10px;
+    grid-column: 2/5;
+    border-radius: 3%;
+}
+
+#cssgrid aside{ 
+    height: auto;
+    background-color: aqua;
+    text-align: center;
+    font-size: 10px;
+    padding-top: 10px;
+    grid-row: 1/4;
+    border-radius: 3%;
+}
+
+#cssgrid .uno{
+    height: 200px;
+    background-color: hsl(170, 100%, 50%);
+    text-align: center;
+    font-size: 10px;
+    padding-top: 10px;
+    border-radius: 3%;
+}
+#cssgrid .dos{
+    height: 200px;
+    background-color: hsl(175, 67%, 60%);
+    text-align: center;
+    font-size: 10px;
+    padding-top: 10px;
+    border-radius: 3%;
+}
+#cssgrid .tres{
+    height: 200px;
+    background-color: hsl(175, 82%, 62%);
+    text-align: center;
+    font-size: 10px;
+    padding-top: 10px;
+    border-radius: 3%;
+}
+
+#cssgrid footer{
+    height: 100px;
+    background-color: hsl(155, 73%, 45%);
+    text-align: center;
+    font-size: 10px;
+    padding-top: 10px;
+    grid-column: 2/5;
+    border-radius: 3%;
+}
+
+@media (max-width:425px){
+    #cssgrid{
+        display: block;
+        
+    }
+    #cssgrid aside, footer{
+        margin: 5px auto;
+        
+    }
+    #cssgrid main{
+        height: 300px;
+        margin: 5px auto;
+    }
+
+    #cssgrid .uno, .dos, .tres{
+        margin: 5px auto;
+    }
+    
+}
+    
