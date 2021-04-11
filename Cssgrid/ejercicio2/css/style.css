@@ -1,0 +1,40 @@
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+#cssgrid2>article{
+    width: auto;
+    height: 200px;
+    background-color: lightgray;
+    border: 1px solid black;
+    margin: 3px;
+
+}
+
+#cssgrid2{
+        width: 100%;
+      display:grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap:0.1em;
+    grid-template-rows: 1fr;
+}
+
+#cssgrid2 .caja1{
+    grid-row: 1/3;
+    grid-column: 1/3;
+    height: auto;
+}
+
+#cssgrid2 .caja10{
+    grid-row: 3/5;
+    grid-column: 3/5;
+    height: auto;
+}
+
+#cssgrid2 .caja11{
+    grid-row: 5/7;
+    grid-column: 1/3;
+    height: auto;
+}
